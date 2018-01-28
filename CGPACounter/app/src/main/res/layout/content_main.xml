@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shhridoy.cgpacounter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/TVNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/TVNameTitle"
+        android:layout_toRightOf="@id/TVNameTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="Enter the name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVIDTitle"
+        android:layout_below="@id/ETName"
+        android:layout_alignEnd="@id/TVNameTitle"
+        android:layout_alignRight="@id/TVNameTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETName"
+        android:layout_toEndOf="@id/TVIDTitle"
+        android:layout_toRightOf="@id/TVIDTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="Enter the ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem1Title"
+        android:layout_below="@id/ETID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 1: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETID"
+        android:layout_toEndOf="@id/TVSem1Title"
+        android:layout_toRightOf="@id/TVSem1Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="TGPA of Sem-1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/TVSem2Title"
+        android:layout_below="@id/TVSem1Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 2: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem1"
+        android:layout_toEndOf="@id/TVSem2Title"
+        android:layout_toRightOf="@id/TVSem2Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="TGPA of Sem-2"
+        android:inputType="numberDecimal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem3Title"
+        android:layout_below="@id/TVSem2Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 3: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem2"
+        android:layout_toEndOf="@id/TVSem3Title"
+        android:layout_toRightOf="@id/TVSem3Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="TGPA of Sem-3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem4Title"
+        android:layout_below="@id/TVSem3Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 4: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem3"
+        android:layout_toEndOf="@id/TVSem4Title"
+        android:layout_toRightOf="@id/TVSem4Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="TGPA of Sem-4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem5Title"
+        android:layout_below="@id/TVSem4Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 5: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem4"
+        android:layout_toEndOf="@id/TVSem5Title"
+        android:layout_toRightOf="@id/TVSem5Title"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:hint="TGPA of Sem-5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem6Title"
+        android:layout_below="@id/TVSem5Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 6: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem5"
+        android:layout_toEndOf="@id/TVSem6Title"
+        android:layout_toRightOf="@id/TVSem6Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="TGPA of Sem-6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem7Title"
+        android:layout_below="@id/TVSem6Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 7: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem6"
+        android:layout_toEndOf="@id/TVSem7Title"
+        android:layout_toRightOf="@id/TVSem7Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="TGPA of Sem-7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/TVSem8Title"
+        android:layout_below="@id/TVSem7Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester 8: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/ETSem8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETSem7"
+        android:layout_toEndOf="@id/TVSem8Title"
+        android:layout_toRightOf="@id/TVSem8Title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="TGPA of Sem-8"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVSem8Title"
+        android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/TVCGPA"
+        android:layout_below="@id/ETSem8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/calculateBtn"
+        android:layout_toRightOf="@id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/calculateBtn"
+        android:layout_alignBottom="@id/calculateBtn"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save in database"
+        android:layout_below="@id/calculateBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

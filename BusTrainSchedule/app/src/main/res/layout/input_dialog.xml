@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Record Entry"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/NameET"
+        android:layout_below="@id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:hint="Vehicle Name Here"
+        android:textAlignment="center"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/datePicBtn"
+        android:layout_below="@id/NameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Date"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/ChooseDateTV"
+        android:layout_below="@id/NameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:hint="Date Here"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/datePicBtn"
+        android:layout_toEndOf="@id/datePicBtn"
+        android:layout_alignTop="@id/datePicBtn"
+        android:layout_alignBottom="@id/datePicBtn"/>
+
+    <Button
+        android:id="@+id/timePicBtn"
+        android:layout_below="@id/ChooseDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Time"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/ChooseTimeET"
+        android:layout_below="@id/NameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:hint="Time Here"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/timePicBtn"
+        android:layout_toEndOf="@id/timePicBtn"
+        android:layout_alignTop="@id/timePicBtn"
+        android:layout_alignBottom="@id/timePicBtn"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_below="@id/ChooseTimeET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SAVE"
+        android:padding="10dp"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

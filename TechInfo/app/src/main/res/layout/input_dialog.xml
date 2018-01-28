@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TVNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Name: "
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TVNameTitle"
+        android:layout_toEndOf="@id/TVNameTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/TVPriceTitle"
+        android:layout_below="@id/TVNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Price: "
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ETPrice"
+        android:layout_below="@id/ETName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TVPriceTitle"
+        android:layout_toEndOf="@id/TVPriceTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/TVRevenueTitle"
+        android:layout_below="@id/TVPriceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Revenue: "
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ETRevenue"
+        android:layout_below="@id/ETPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TVRevenueTitle"
+        android:layout_toEndOf="@id/TVRevenueTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Revenue"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/TVIncomeTitle"
+        android:layout_below="@id/TVRevenueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Yearly Income: "
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ETYearlyIncome"
+        android:layout_below="@id/ETRevenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TVIncomeTitle"
+        android:layout_toEndOf="@id/TVIncomeTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Yearly Income"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/TVEstbYearTitle"
+        android:layout_below="@id/TVIncomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:text="Established Year: "
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ETEstbDate"
+        android:layout_below="@id/ETYearlyIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TVEstbYearTitle"
+        android:layout_toEndOf="@id/TVEstbYearTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Established date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_below="@id/ETEstbDate"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TVNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_below="@id/TVNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:hint="Name here"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/TVBloodTitle"
+        android:layout_below="@id/ETName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Blood Group"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/ETBlood"
+        android:layout_below="@id/TVBloodTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:hint="Blood group here"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/TVAgeTitle"
+        android:layout_below="@id/ETBlood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Age"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/ETAge"
+        android:layout_below="@id/TVAgeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:hint="Age here"
+        android:inputType="number"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/TVContact"
+        android:layout_below="@id/ETAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Contact"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/ETContact"
+        android:layout_below="@id/TVContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"
+        android:hint="Contact here"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/ListItemTV"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/CallImageButton"
+        android:layout_toStartOf="@+id/CallImageButton"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:text="Shahid Hossen"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/CallImageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignTop="@id/ListItemTV"
+        android:layout_alignBottom="@id/ListItemTV"
+        android:src="@android:drawable/ic_menu_call"
+        android:background="?android:attr/selectableItemBackground"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
