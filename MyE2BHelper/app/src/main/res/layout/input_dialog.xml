@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTealNav">
+
+    <TextView
+        android:id="@+id/TVEnglishTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="English Word"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/ETEnglish"
+        android:layout_below="@id/TVEnglishTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="10dp"
+        android:hint="Enter English word here"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/TVBanglaTitle"
+        android:layout_below="@id/ETEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="বাংলা অর্থ"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/ETBangla"
+        android:layout_below="@id/TVBanglaTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="10dp"
+        android:hint="এখানে বাংলা অর্থ লিখুন"
+        android:layout_margin="0dp"
+        android:textStyle="normal"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_below="@id/ETBangla"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
