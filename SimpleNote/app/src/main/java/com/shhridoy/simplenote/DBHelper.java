@@ -19,12 +19,14 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String ID = "id";
     private static final String TITLE = "title";
     private static final String DETAILS = "details";
+    private static final String DATE = "date";
 
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME +
             "( " +
             ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             TITLE + " TEXT NOT NULL, " +
-            DETAILS + " TEXT NOT NULL);";
+            DETAILS + " TEXT NOT NULL, " +
+            DATE + " TEXT);";
 
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
@@ -43,10 +45,11 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public void insertData(String tit, String det) {
+    public void insertData(String tit, String det, String date) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(TITLE, tit);
         contentValues.put(DETAILS, det);
+        contentValues.put(DATE, date);
         this.getWritableDatabase().insertOrThrow(TABLE_NAME, "", contentValues);
         this.getWritableDatabase().close();
     }
@@ -57,10 +60,11 @@ public class DBHelper extends SQLiteOpenHelper {
         return result > 0;
     }
 
-    public boolean updateData(int id, String tit, String det){
+    public boolean updateData(int id, String tit, String det, String date){
         ContentValues cv = new ContentValues();
         cv.put(TITLE, tit);
         cv.put(DETAILS, det);
+        cv.put(DATE, date);
         int reslt = this.getWritableDatabase().update(TABLE_NAME, cv, ID+" =?", new String[]{String.valueOf(id)});
         this.getWritableDatabase().close();
         return reslt > 0;
